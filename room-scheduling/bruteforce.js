@@ -76,12 +76,4 @@ tape('getRoomCountForMeetingSlots', function (t) {
     t.equal(2, getRoomCountForMeetingSlots([[30, 75], [0, 50], [60, 150], [75, 80]]));
     t.equal(1, getRoomCountForMeetingSlots([[30, 75], [0, 20], [75, 180]]));
     t.equal(0, getRoomCountForMeetingSlots([]));
-})
-//                                 <--A-->   <--B-->
-console.log(isIntersectingTimeslot([20, 25], [20, 30]))
-console.log(isIntersectingTimeslot([30, 75], [0, 50]))
-console.log(isIntersectingTimeslot([0, 50], [30, 75]))
-console.log(isIntersectingTimeslot([0, 70], [75, 100]))
-console.log(isIntersectingTimeslot([30, 75], [60, 150]));
-
-console.log(getRoomCountForMeetingSlots([[30, 75], [0, 50], [60, 150], [75, 80]]));
+});
